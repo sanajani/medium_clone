@@ -1,36 +1,23 @@
-import {createBrowserRouter} from 'react-router-dom'
+import {
+  createBrowserRouter,
+} from "react-router-dom";
+import Layout from "../layout/Layout";
+import Home from "../pages/Home";
+import HomeAuth from "../pages/HomeAuth";
+
+const login = false;
 
 export const routes = createBrowserRouter([
-    {
-      path: "/",
-      element: <h1>Hello Home</h1>,
-      children: [
-        {
-          path: "contact",
-          element: <h1>Hello contact</h1>,
-        },
-        {
-          path: "dashboard",
-          element: <h1>Hello dashboard</h1>,
-          loader: ({ request }) =>
-            fetch("/api/dashboard.json", {
-              signal: request.signal,
-            }),
-        },
-        {
-        element: <h1>Hello auth</h1>,
-            children: [
-            {
-              path: "login",
-              element: <h1>Hello login</h1>,
-            //   loader: redirectIfUser,
-            },
-            {
-              path: "logout",
-            //   action: logoutUser,
-            },
-          ],
-        },
-      ],
-    },
-  ]);
+  {
+    path: "/",
+    element: (
+      <Layout/>
+    ),
+    children:[
+      {
+        path: "",
+        element: login? <Home />:<HomeAuth />,
+      },
+    ]
+  },
+]);
