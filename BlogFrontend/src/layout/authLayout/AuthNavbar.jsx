@@ -11,6 +11,7 @@ const AuthNavbar = () => {
             <li><Link to='/'>Write</Link></li>
             <li><Link to='/'>Sign in</Link></li>
           </ul>
+          
           <button className="text-white text-sm bg-black py-2 px-4 rounded-full">Get started</button>
         </div>
     </nav>
