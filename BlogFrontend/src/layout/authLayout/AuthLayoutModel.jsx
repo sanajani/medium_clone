@@ -7,7 +7,9 @@ const AuthLayoutModel = () => {
   return (
     <div>
       <AuthNavbar />
-      <Outlet />
+        <div className="min-h-[90vh]">
+          <Outlet />
+        </div>
       <Footer />
     </div>
   )

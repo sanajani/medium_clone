@@ -6,7 +6,7 @@ const DefaultLayout = () => {
   return (
     <div>
       <Navbar />
-      <div className="">
+      <div className="min-h-[90vh]">
         <Outlet />
       </div>
       <Footer />
