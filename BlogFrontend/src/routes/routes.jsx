@@ -3,9 +3,10 @@ import {
 } from "react-router-dom";
 import Layout from "../layout/Layout";
 import Home from "../pages/Home";
-import HomeAuth from "../pages/HomeAuth";
 
-const login = false;
+// import HomeAuth from "../pages/HomeAuth";
+// const login = false;
+
 
 export const routes = createBrowserRouter([
   {
@@ -14,10 +15,14 @@ export const routes = createBrowserRouter([
       <Layout/>
     ),
     children:[
+      // {
+      //   path: "",
+      //   element: login? <Home />:<HomeAuth />,
+      // },
       {
-        path: "",
-        element: login? <Home />:<HomeAuth />,
-      },
+        path:'',
+        element: <Home />
+      }
     ]
   },
 ]);
