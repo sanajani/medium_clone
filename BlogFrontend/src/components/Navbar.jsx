@@ -4,7 +4,6 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { MdEditSquare } from "react-icons/md";
 
 
-
 const Navbar = () => {
   return (
     <nav className="w-full bg-gray-50 shadow-md h-[70px] flex justify-between items-center px-6 md:px-8 lg:px-20 ">
