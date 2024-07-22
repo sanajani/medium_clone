@@ -10,11 +10,10 @@ import PostInfo from "./PostInfo";
 
 const PostOverviewOnHome = () => {
   return (
-    <section className="p-10">
-      {/* <div className="flex mx-auto items-center gap-5 border-b border-black max-w-[80%]"> */}
-      <div className="grid grid-cols-12 mx-auto items-center gap-5 border-b border-black max-w-[80%]">
+    <section className="md:p-10 p-3 mt-6 md:mt-0">
+      <div className="grid grid-cols-12 mx-auto items-center gap-5 border-b border-black md:max-w-[90%] max-w-full lg:max-w-[80%]">
         {/* post information  */}
-        <div className="col-span-9">
+        <div className="md:col-span-9 sm:col-span-10 col-span-12">
             {/* author info above post */}
             <AuthorInfo authName={"Sana"} authImage={authorImage} />
             {/*end of author info above post */}
@@ -35,7 +34,7 @@ const PostOverviewOnHome = () => {
             </div>
         </div>
         {/* post image */}
-        <div className="col-span-3 bg-red-700">
+        <div className="md:col-span-3 sm:col-span-2 sm:block hidden">
           <img src={codingImage} className="h-full" alt="coding_image" />
         </div>
       </div>

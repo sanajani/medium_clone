@@ -3,7 +3,7 @@ const Home = () => {
   return (
     <main className="grid lg:grid-cols-3 md:grid-cols-1 min-h-screen">
       {/* left section show posts */}
-      <section className="lg:col-span-2 h-[400vh]">
+      <section className="lg:col-span-2 h-[400vh] mt-8">
         <PostOverviewOnHome/>
         <PostOverviewOnHome/>
         <PostOverviewOnHome/>
