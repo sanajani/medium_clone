@@ -10,7 +10,7 @@ import PostInfo from "./PostInfo";
 
 const PostOverviewOnHome = () => {
   return (
-    <section className="md:p-10 p-3 mt-6 md:mt-0">
+    <section className="md:p-3 p-3 md:mt-0 mb-2">
       <div className="grid grid-cols-12 mx-auto items-center gap-5 border-b border-black md:max-w-[90%] max-w-full lg:max-w-[80%]">
         {/* post information  */}
         <div className="md:col-span-9 sm:col-span-10 col-span-12">
