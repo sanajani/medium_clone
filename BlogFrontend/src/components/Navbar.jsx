@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { CiSearch } from "react-icons/ci";
 import { Link } from "react-router-dom"
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { MdEditSquare } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({setSideBarOpen,sideBarOpen}) => {
   return (
     <nav className="w-full bg-gray-50 shadow-md h-[70px] flex justify-between items-center px-6 md:px-8 lg:px-20 ">
       <div className="flex gap-5 items-center">
@@ -18,7 +19,7 @@ const Navbar = () => {
             <li className="hidden md:block"><Link to='/' className="flex gap-2 items-center"> <MdEditSquare size={24} /> Write</Link></li>
             <li className="block md:hidden"><Link to='/search'><CiSearch size={26} /></Link></li>
             <li><Link to='/notifications'><IoIosNotificationsOutline size={28} /></Link></li>
-            <li className="w-8 rounded-full bg-pink-400 h-8 border "><Link to='/'></Link></li>
+            <li onClick={() => setSideBarOpen(!sideBarOpen)} className="w-8 rounded-full cursor-pointer bg-pink-400 h-8 border "><Link to='/'></Link></li>
           </ul>
         </div>
     </nav>
