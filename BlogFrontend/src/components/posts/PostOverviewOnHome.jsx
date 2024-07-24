@@ -11,7 +11,7 @@ import PostInfo from "./PostInfo";
 const PostOverviewOnHome = () => {
   return (
     <section className="md:p-3 p-3 md:mt-0 mb-2">
-      <div className="grid grid-cols-12 mx-auto items-center gap-5 border-b border-black md:max-w-[90%] max-w-full lg:max-w-[80%]">
+      <div className="grid grid-cols-12 mx-auto items-center gap-5 border-b border-gray-200 md:max-w-[90%] max-w-full lg:max-w-[80%]">
         {/* post information  */}
         <div className="md:col-span-9 sm:col-span-10 col-span-12">
             {/* author info above post */}
