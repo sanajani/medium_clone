@@ -19,7 +19,7 @@ const ShowFollowingSection = () => {
   }
 
   return (
-    <div>
+    <div className="lg:block hidden">
       <div className="flex items-center justify-between">
 
        <span className=" cursor-pointer" onClick={prevButton}>{firstIndex > 0 && <FaArrowCircleLeft size={25} />}</span>

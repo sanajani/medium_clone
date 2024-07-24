@@ -18,7 +18,7 @@ const Navbar = () => {
           <ul className="flex gap-5 text-sm items-center">
             <li className="hidden md:block"><Link to='/' className="flex gap-2 items-center"> <MdEditSquare size={24} /> Write</Link></li>
             <li className="block md:hidden"><Link to='/'><CiSearch size={26} /></Link></li>
-            <li><Link to='/'><IoIosNotificationsOutline size={28} /></Link></li>
+            <li><Link to='/notifications'><IoIosNotificationsOutline size={28} /></Link></li>
             <li className="w-8 rounded-full bg-pink-400 h-8 border "><Link to='/'></Link></li>
           </ul>
         </div>
