@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .active {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+}

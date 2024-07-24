@@ -4,6 +4,7 @@ import {
 import Layout from "../layout/Layout";
 import Home from "../pages/Home";
 import Notifications from "../pages/Notifications";
+import MobileSearch from "../pages/MobileSearch";
 
 // import HomeAuth from "../pages/HomeAuth";
 // const login = false;
@@ -38,7 +39,10 @@ export const routes = createBrowserRouter([
           },
         ]
       },
-
+      {
+        path:'search',
+        element: <MobileSearch/>
+      }
     ]
   },
 ]);
