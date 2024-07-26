@@ -28,14 +28,14 @@ const NewStory = () => {
             accept=".png .jpg"
              />
         </div>
-            <div className="w-full mt-5">
-                <textarea
-                onKeyDown={getTitle}
-                placeholder="Title"
-                onChange={handleTitleField}
-                className="placeholder:opacity-60 w-full break-words text-3xl  md:text-4xl lg:text-5xl outline-none h-20 resize-none"
-                ></textarea>
-            </div>
+        <div className="w-full mt-5">
+            <textarea
+            onKeyDown={getTitle}
+            placeholder="Title"
+            onChange={handleTitleField}
+            className="placeholder:opacity-60 w-full break-words text-3xl  md:text-4xl lg:text-5xl outline-none h-20 resize-none pl-3 border-gray-500"
+            ></textarea>
+        </div>
     </div>
   )
 
