@@ -8,7 +8,8 @@ const RightSideBar = () => {
       <>
     
       {/* right section show details */}
-      <section className="hidden lg:block border-l border-gray-200 sticky top-0 mt-8 h-fit">
+      {/* <section className="hidden lg:block border-l border-gray-200 sticky top-0 mt-8 h-fit bg-red-500"> */}
+        <section>
         {/* pick section start */}
         <div className="px-10">
           <h1 className="font-bold">Staff Picks</h1>
@@ -60,5 +61,16 @@ const RightSideBar = () => {
       </>
   )
 }
-
 export default RightSideBar
+
+
+
+
+
+
+
+
+
+
+
+

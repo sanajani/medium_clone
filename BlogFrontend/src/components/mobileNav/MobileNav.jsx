@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MobileNav = () => {
   return (
-    <div className="max-h-screen overflow-y-scroll p-8">
+    <div className="max-h-screen overflow-clip p-8 transition-all ">
         <ul className="border-b py-6 border-gray-200 mb-4">
             <li className="my-4"><Link className="flex items-center gap-4 text-lg"><span><MdEditSquare size={20} /></span> <span>Write</span></Link></li>
             <li className="my-2"><Link className="flex items-center gap-4 text-lg"><span><MdEditSquare size={20} /></span> <span>Profile</span></Link></li>

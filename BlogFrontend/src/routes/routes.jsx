@@ -1,10 +1,13 @@
 import {
   createBrowserRouter,
 } from "react-router-dom";
+
 import Layout from "../layout/Layout";
+
 import Home from "../pages/Home";
 import Notifications from "../pages/Notifications";
 import MobileSearch from "../pages/MobileSearch";
+import NewStory from "../pages/NewStory";
 
 // import HomeAuth from "../pages/HomeAuth";
 // const login = false;
@@ -45,4 +48,10 @@ export const routes = createBrowserRouter([
       }
     ]
   },
+  {
+    path: '/new-story',
+    element:(
+      <NewStory />
+    )
+  }
 ]);

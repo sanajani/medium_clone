@@ -3,6 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import { Link } from "react-router-dom"
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { MdEditSquare } from "react-icons/md";
+import MobileNav from "./mobileNav/MobileNav";
 
 const Navbar = ({setSideBarOpen,sideBarOpen}) => {
   return (
@@ -16,12 +17,16 @@ const Navbar = ({setSideBarOpen,sideBarOpen}) => {
       </div>
         <div className="flex items-center gap-5">
           <ul className="flex gap-5 text-sm items-center">
-            <li className="hidden md:block"><Link to='/' className="flex gap-2 items-center"> <MdEditSquare size={24} /> Write</Link></li>
+            <li className="hidden md:block"><Link to='/new-story' className="flex gap-2 items-center"> <MdEditSquare size={24} /> Write</Link></li>
             <li className="block md:hidden"><Link to='/search'><CiSearch size={26} /></Link></li>
             <li><Link to='/notifications'><IoIosNotificationsOutline size={28} /></Link></li>
-            <li onClick={() => setSideBarOpen(!sideBarOpen)} className="w-8 rounded-full cursor-pointer bg-pink-400 h-8 border "><Link to='/'></Link></li>
+            <li onClick={() => setSideBarOpen(!sideBarOpen)} className="w-8 rounded-full cursor-pointer bg-pink-400 h-8 border"></li>
           </ul>
         </div>
+        <div
+className={`${sideBarOpen ? ' shadow-xl bg-white absolute top-16 z-20 overflow-clip max-w-[300px] w-[270px] right-0 min-h-screen transition-all': ' right-[-800px] hidden transition-all'}`}>
+        <MobileNav />
+      </div>
     </nav>
   )
 }
