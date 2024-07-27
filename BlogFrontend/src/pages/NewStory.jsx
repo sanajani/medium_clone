@@ -1,18 +1,38 @@
 import StoryPageNav from "../components/story/StoryPageNav"
+import {useContext, useEffect} from 'react'
+import { EditorContext } from "../layout/EditorLayout";
+import EditorJS from '@editorjs/editorjs'
+import { tools } from "../components/editorTools/EditorTools";
+
 
 const NewStory = () => {
+    let {blogValues ,blogValues:{title,banner,content,tags,des}, setBlogValues} = useContext(EditorContext);
+
+    useEffect(() => {
+        let editor = new EditorJS({
+            holder: "textEditor",
+            data: '',
+            placeholder: 'let write an awesome story',
+            tools,
+            
+        })
+    }, [])
 
     const getTitle = (e) => {
         if(e.keyCode == 13){
             e.preventDefault();
         }
     }
+
     const handleTitleField = (e) =>{
         console.log(e);
         let input = e.target;
-
         input.style.height = 'auto';
         input.style.height = input.scrollHeight + "px";
+        setBlogValues({
+            ...blogValues,
+            title: e.target.value
+        })
     }
 
   return (
@@ -35,6 +55,9 @@ const NewStory = () => {
             onChange={handleTitleField}
             className="placeholder:opacity-60 w-full break-words text-3xl  md:text-4xl lg:text-5xl outline-none h-20 resize-none pl-3 border-gray-500"
             ></textarea>
+        </div>
+        <div id="textEditor" className="w-full">
+
         </div>
     </div>
   )

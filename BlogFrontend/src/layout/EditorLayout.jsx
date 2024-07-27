@@ -9,7 +9,11 @@ const blogStructure = {
   tags:[],
   des:'',
   author: {
-    personal_info: {}
+    personal_info: {
+      name:'',
+      email:"",
+      password:""
+    }
   }
 }
 
