@@ -4,7 +4,7 @@ import { BsThreeDots } from "react-icons/bs";
 
 const StoryPageNav = () => {
   return (
-    <nav className="flex bg-blue-500 items-center justify-between py-3">
+    <nav className="flex items-center justify-between py-3">
         {/* logo */}
         <div className="flex items-center gap-5">
         <h1 className="font-bold tracking-wide text-3xl ">Medium</h1>

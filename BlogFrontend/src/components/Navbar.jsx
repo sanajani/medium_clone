@@ -17,7 +17,7 @@ const Navbar = ({setSideBarOpen,sideBarOpen}) => {
       </div>
         <div className="flex items-center gap-5">
           <ul className="flex gap-5 text-sm items-center">
-            <li className="hidden md:block"><Link to='/new-story' className="flex gap-2 items-center"> <MdEditSquare size={24} /> Write</Link></li>
+            <li className="hidden md:block"><Link to='/new-story/write' className="flex gap-2 items-center"> <MdEditSquare size={24} /> Write</Link></li>
             <li className="block md:hidden"><Link to='/search'><CiSearch size={26} /></Link></li>
             <li><Link to='/notifications'><IoIosNotificationsOutline size={28} /></Link></li>
             <li onClick={() => setSideBarOpen(!sideBarOpen)} className="w-8 rounded-full cursor-pointer bg-pink-400 h-8 border"></li>

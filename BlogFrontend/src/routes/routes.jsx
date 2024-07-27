@@ -11,7 +11,7 @@ import NewStory from "../pages/NewStory";
 
 // import HomeAuth from "../pages/HomeAuth";
 // const login = false;
-
+import EditorLayout from "../layout/EditorLayout";
 
 export const routes = createBrowserRouter([
   {
@@ -51,7 +51,17 @@ export const routes = createBrowserRouter([
   {
     path: '/new-story',
     element:(
-      <NewStory />
-    )
+      <EditorLayout />
+    ),
+    children:[
+      {
+        path:'write',
+        element: <NewStory/>
+      },
+      {
+        path:'publish',
+        element: <h1>Publish</h1>
+      }
+    ]
   }
 ]);
